@@ -91,7 +91,7 @@ public class donat extends AppCompatActivity implements PaymentResultListener {
                 checkout.setKeyID("rzp_test_kCC2C4EXZSsNN1");
 
                 // set image
-                checkout.setImage(R.drawable.home);
+                checkout.setImage(R.drawable.logo);
 
                 // initialize json object
                 JSONObject object = new JSONObject();

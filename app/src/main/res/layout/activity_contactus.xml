@@ -9,6 +9,7 @@
 
 
     <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="62dp"
         android:layout_above="@+id/bottom_navigation"
@@ -16,10 +17,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="104dp"
-        android:id="@+id/text"
+        android:layout_marginTop="29dp"
         android:layout_marginEnd="102dp"
-        android:layout_marginBottom="513dp"
+        android:layout_marginBottom="588dp"
         android:padding="10dp"
         android:text="Get in Touch"
         android:textSize="30sp"
@@ -50,3 +50,5 @@
         app:menu="@menu/menu" />
 
 </RelativeLayout>
+
+
