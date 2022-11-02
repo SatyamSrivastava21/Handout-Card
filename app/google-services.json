@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "174265011623",
+    "project_id": "handout-cards",
+    "storage_bucket": "handout-cards.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174265011623:android:69022b5b59e4ab1fabba82",
+        "android_client_info": {
+          "package_name": "com.satyam.handout_cards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174265011623-1a57jgfs2f0ne9e68vti7nq4jlfeo308.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgIhMW30BVfCA48Q7fvimDtdaL4VddZfI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174265011623-1a57jgfs2f0ne9e68vti7nq4jlfeo308.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
