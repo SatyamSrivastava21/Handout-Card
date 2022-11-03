@@ -49,7 +49,7 @@
         android:id="@+id/chatView"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:orientation="vertical"
-        tools:listitem="@layout/adapter_message_one"
+        tools:listitem="@layout/activity_adapter_message_one"
         app:stackFromEnd="true"
         tools:itemCount="2"
         app:layout_constraintStart_toStartOf="parent"
