@@ -4,11 +4,15 @@ package com.satyam.handout_cards;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -20,6 +24,16 @@ Button chat;
         setContentView(R.layout.activity_contactus);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+  ImageButton goonit = findViewById(R.id.goonit);
+  goonit.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+          Intent browserIntent = new Intent(
+                  Intent.ACTION_VIEW,
+                  Uri.parse("https://privacyhandout.web.app/"));
+          startActivity(browserIntent);
+      }
+  });
 chat = findViewById(R.id.chat);
         chat.setOnClickListener(view -> {
             Intent iNext;
