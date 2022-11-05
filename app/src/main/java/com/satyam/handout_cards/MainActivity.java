@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             Intent iNext;
             Animation anim1 = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim1);
             button.startAnimation(anim1);
-            iNext = new Intent(this, home.class);
+            iNext = new Intent(this, regi.class);
             startActivity(iNext);
         });
     }
