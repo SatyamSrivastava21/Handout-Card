@@ -97,7 +97,7 @@ public class donat extends AppCompatActivity implements PaymentResultListener {
                 JSONObject object = new JSONObject();
                 try {
                     // to put name
-                    object.put("name", "Hey Colleagues");
+                    object.put("name", "Thanks ");
 
                     // put description
                     object.put("description", "Test payment");
@@ -115,7 +115,7 @@ public class donat extends AppCompatActivity implements PaymentResultListener {
                     object.put("prefill.contact", "8005221202");
 
                     // put email
-                    object.put("prefill.email", "exahertz@gmail.com");
+                    object.put("prefill.email", "abcd@gmail.com");
 
                     // open razorpay to checkout activity
                     checkout.open(donat.this, object);
@@ -130,6 +130,7 @@ public class donat extends AppCompatActivity implements PaymentResultListener {
     public void onPaymentSuccess(String s) {
         // this method is called on payment success.
         Toast.makeText(this, "Payment is successful : " + s, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "An mail will be send to your  registered email address . Thanks for donating  " + s, Toast.LENGTH_SHORT).show();
     }
 
     @Override

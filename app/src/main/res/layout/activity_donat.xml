@@ -94,25 +94,37 @@
 
                 android:paddingRight="20dp"
                 android:paddingBottom="20dp">
+                <EditText
 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Email Address"
+                    android:autofillHints="abc@gmail.com"
+                    android:inputType="number" />
 
                 <EditText
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Enter amount to Split"
+                    android:autofillHints="50"
                     android:inputType="number" />
 
                 <EditText
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:autofillHints="10"
                     android:hint="Enter amount of card to donate"
                     android:inputType="number" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="610dp"
+        android:background="@android:color/black" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/amountlayout"
@@ -121,7 +133,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
 
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="615dp"
         android:layout_marginRight="160dp">
 
         <EditText
@@ -138,11 +150,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="290dp"
-        android:layout_marginTop="600dp">
+        android:layout_marginTop="595dp">
 
         <Button
             android:id="@+id/idBtnPay"
             android:layout_width="wrap_content"
+            android:padding="15dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"

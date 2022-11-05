@@ -3,4 +3,7 @@
     <string name="text1">1.) Click bellow and donate\n2.) After successful payment you will recieve email with cards\n3.)Ones again thanks for the the donation\n4.)Please contact us 24*7 HELP DESK</string>
     <string name="donate_for_the_mankind">Donate For the Mankind</string>
     <string name="help_each_other">Help eACH other</string>
+    <string name="todo">TODO</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="here_is_the_first_step_with_us">Here is the first step with us</string>
 </resources>

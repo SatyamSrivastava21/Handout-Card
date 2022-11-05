@@ -4,14 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-
-import com.google.android.gms.tasks.Continuation;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-
-import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -19,14 +12,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-
-
-import android.view.MenuItem;
-
-import android.view.WindowManager;
-
-
+import com.google.android.gms.tasks.Continuation;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 public class shopkeeper extends AppCompatActivity {
 
@@ -37,49 +28,43 @@ public class shopkeeper extends AppCompatActivity {
         ImageView upload;
         Uri imageuri = null;
         upload = findViewById(R.id.uploadpdf);
-        upload.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent galleryIntent = new Intent();
-                galleryIntent.setAction(Intent.ACTION_GET_CONTENT);
+        upload.setOnClickListener(v -> {
+            Intent galleryIntent = new Intent();
+            galleryIntent.setAction(Intent.ACTION_GET_CONTENT);
 
-                // We will be redirected to choose pdf
-                galleryIntent.setType("application/pdf");
-                startActivityForResult(galleryIntent, 1);
-            }
+            // We will be redirected to choose pdf
+            galleryIntent.setType("application/pdf");
+            startActivityForResult(galleryIntent, 1);
         });
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.shop);
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
 
-                switch (item.getItemId()) {
-                    case R.id.home:
-                        startActivity(new Intent(getApplicationContext(), home.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.donat:
-                        startActivity(new Intent(getApplicationContext(), donat.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.profile:
-                        startActivity(new Intent(getApplicationContext(), profile.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.contactus:
-                        startActivity(new Intent(getApplicationContext(), contactus.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.shop:
-                        startActivity(new Intent(getApplicationContext(), shopkeeper.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                }
-                return false;
+            switch (item.getItemId()) {
+                case R.id.home:
+                    startActivity(new Intent(getApplicationContext(), home.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                case R.id.donat:
+                    startActivity(new Intent(getApplicationContext(), donat.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                case R.id.profile:
+                    startActivity(new Intent(getApplicationContext(), profile.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                case R.id.contactus:
+                    startActivity(new Intent(getApplicationContext(), contactus.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                case R.id.shop:
+                    startActivity(new Intent(getApplicationContext(), shopkeeper.class));
+                    overridePendingTransition(0, 0);
+                    return true;
             }
+            return false;
         });
     }
 
@@ -114,21 +99,20 @@ public class shopkeeper extends AppCompatActivity {
                     }
                     return filepath.getDownloadUrl();
                 }
-            }).addOnCompleteListener(new OnCompleteListener<Uri>() {
-                @Override
-                public void onComplete(@NonNull Task<Uri> task) {
-                    if (task.isSuccessful()) {
-                        // After uploading is done it progress
-                        // dialog box will be dismissed
-                        dialog.dismiss();
-                        Uri uri = task.getResult();
-                        String myurl;
-                        myurl = uri.toString();
-                        Toast.makeText(shopkeeper.this, "Uploaded Successfully", Toast.LENGTH_SHORT).show();
-                    } else {
-                        dialog.dismiss();
-                        Toast.makeText(shopkeeper.this, "UploadedFailed", Toast.LENGTH_SHORT).show();
-                    }
+            }).addOnCompleteListener((OnCompleteListener<Uri>) task -> {
+                if (task.isSuccessful()) {
+                    // After uploading is done it progress
+                    // dialog box will be dismissed
+                    dialog.dismiss();
+                    Uri uri = task.getResult();
+                    String myurl;
+                    myurl = uri.toString();
+                    Toast.makeText(shopkeeper.this, "Uploaded Successfully", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(shopkeeper.this, "Your amount will be paid soon to your account", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(shopkeeper.this, "If having issue try iur 24*7 HELP DESK", Toast.LENGTH_SHORT).show();
+                } else {
+                    dialog.dismiss();
+                    Toast.makeText(shopkeeper.this, "UploadedFailed", Toast.LENGTH_SHORT).show();
                 }
             });
         }

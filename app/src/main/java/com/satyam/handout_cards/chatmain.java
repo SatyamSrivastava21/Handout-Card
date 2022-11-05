@@ -2,7 +2,7 @@ package com.satyam.handout_cards;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
+
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -38,8 +38,7 @@ public class chatmain extends AppCompatActivity implements BotReply {
     //dialogFlow
     private SessionsClient sessionsClient;
     private SessionName sessionName;
-    private String uuid = UUID.randomUUID().toString();
-    private String TAG = "mainactivity";
+    private final String uuid = UUID.randomUUID().toString();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,20 +51,17 @@ public class chatmain extends AppCompatActivity implements BotReply {
         chatAdapter = new ChatAdapter(messageList, this);
         chatView.setAdapter(chatAdapter);
 
-        btnSend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String message = editMessage.getText().toString();
-                if (!message.isEmpty()) {
-                    messageList.add(new Message(message, false));
-                    editMessage.setText("");
-                    sendMessageToBot(message);
-                    Objects.requireNonNull(chatView.getAdapter()).notifyDataSetChanged();
-                    Objects.requireNonNull(chatView.getLayoutManager())
-                            .scrollToPosition(messageList.size() - 1);
-                } else {
-                    Toast.makeText(chatmain.this, "Please enter text!", Toast.LENGTH_SHORT).show();
-                }
+        btnSend.setOnClickListener(view -> {
+            String message = editMessage.getText().toString();
+            if (!message.isEmpty()) {
+                messageList.add(new Message(message, false));
+                editMessage.setText("");
+                sendMessageToBot(message);
+                Objects.requireNonNull(chatView.getAdapter()).notifyDataSetChanged();
+                Objects.requireNonNull(chatView.getLayoutManager())
+                        .scrollToPosition(messageList.size() - 1);
+            } else {
+                Toast.makeText(chatmain.this, "Please enter text!", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -73,6 +69,7 @@ public class chatmain extends AppCompatActivity implements BotReply {
     }
 
     private void setUpBot() {
+        String TAG = "contactus";
         try {
             InputStream stream = this.getResources().openRawResource(R.raw.credential);
             GoogleCredentials credentials = GoogleCredentials.fromStream(stream)
