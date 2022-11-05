@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#95D798"
+    android:background="@drawable/grad2"
     android:layout_height="match_parent"
     android:fontFamily="@font/allerta"
     tools:context=".donat">
