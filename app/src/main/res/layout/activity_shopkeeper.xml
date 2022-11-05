@@ -8,25 +8,41 @@
     tools:context=".profile">
 
 
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="40sp"
+        android:text="Shopkeeper"
+        android:textColor="@color/blue1" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="610dp"
+        android:background="@android:color/black" />
     <LinearLayout
 
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="620dp"
+        android:orientation="horizontal"
         tools:context=".MainActivity">
 
         <ImageView
             android:id="@+id/uploadpdf"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@drawable/ic_launcher_foreground" />
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/charity" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Upload A Pdf"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/allerta"
             android:textSize="22sp"
             android:textStyle="bold" />
 

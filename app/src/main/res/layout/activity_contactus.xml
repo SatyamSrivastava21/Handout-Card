@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".contactus">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="40sp"
+        android:text="Contact Us"
+        android:textColor="@color/blue1" />
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -80,13 +90,14 @@
                     android:text="Privacy Policy"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="@color/black" />
+
                 <ImageButton
-                    android:layout_width="wrap_content"
                     android:id="@+id/goonit"
-                  android:layout_marginLeft="160dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/goonit"/>
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/goonit" />
 
             </LinearLayout>
 
