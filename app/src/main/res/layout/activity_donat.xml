@@ -100,7 +100,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Enter Email Address"
                     android:autofillHints="abc@gmail.com"
-                    android:inputType="number" />
+                    android:inputType="text" />
 
                 <EditText
 
