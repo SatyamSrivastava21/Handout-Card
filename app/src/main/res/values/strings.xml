@@ -6,4 +6,13 @@
     <string name="todo">TODO</string>
     <string name="contact_us">Contact Us</string>
     <string name="here_is_the_first_step_with_us">Here is the first step with us</string>
+    <string name="food_cards">Food Cards</string>
+    <string name="part_of">Part of</string>
+    <string name="handout">Handout</string>
+    <string name="join_us"><![CDATA[Join Us >]]></string>
+    <string name="just_one_tap">Just one Tap</string>
+    <string name="line2">Make a Ddifference in people\'s\n lives with just one tap</string>
+    <string name="we_re_in_it_together">We\'re in it together</string>
+    <string name="we_can_be_the_genration_that_n_ends_hunger">We can be the genration that\n ends hunger</string>
+    <string name="start_donating_now">Start donating now</string>
 </resources>

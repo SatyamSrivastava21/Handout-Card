@@ -12,14 +12,11 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Food Cards "
+        android:text="@string/food_cards"
         android:textColor="@color/white"
         android:textSize="32sp"
         android:textStyle="bold"
-
         app:layout_constraintBottom_toBottomOf="parent"
-
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +26,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Part of"
+        android:text="@string/part_of"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="normal"
@@ -45,7 +42,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/allerta"
 
-        android:text="Handout"
+        android:text="@string/handout"
 
         android:textColor="@color/white"
         android:textSize="30sp"
@@ -61,7 +58,7 @@
         android:id="@+id/button"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:text="Join Us >"
+        android:text="@string/join_us"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

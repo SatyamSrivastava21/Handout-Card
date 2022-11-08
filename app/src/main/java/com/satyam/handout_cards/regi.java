@@ -167,5 +167,9 @@ public class regi extends AppCompatActivity {
         });
 
     }
+    @Override
+    public void onBackPressed() {
+        // super.onBackPressed();
+    }
 }
 

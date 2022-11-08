@@ -28,4 +28,6 @@ public class splash extends AppCompatActivity {
             startActivity(iNext);
         });
     }
+
+
 }
