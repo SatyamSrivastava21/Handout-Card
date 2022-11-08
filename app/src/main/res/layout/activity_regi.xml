@@ -18,7 +18,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:contentDescription="@string/todo"
+
             android:src="@drawable/logo" />
 
         <TextView
@@ -153,7 +153,7 @@
                     android:layout_height="15dp"
                     android:layout_gravity="center"
                     android:background="@drawable/ic_baseline_check_24"
-                    android:contentDescription="@string/todo" />
+                  />
 
             </androidx.cardview.widget.CardView>
 
@@ -186,7 +186,7 @@
                     android:layout_height="15dp"
                     android:layout_gravity="center"
                     android:background="@drawable/ic_baseline_check_24"
-                    android:contentDescription="@string/todo" />
+                 />
 
             </androidx.cardview.widget.CardView>
 
@@ -220,7 +220,7 @@
                     android:layout_height="15dp"
                     android:layout_gravity="center"
                     android:background="@drawable/ic_baseline_check_24"
-                    android:contentDescription="@string/todo" />
+                    />
 
             </androidx.cardview.widget.CardView>
 
@@ -254,7 +254,7 @@
                     android:layout_height="15dp"
                     android:layout_gravity="center"
                     android:background="@drawable/ic_baseline_check_24"
-                    android:contentDescription="@string/todo" />
+                   />
 
             </androidx.cardview.widget.CardView>
 

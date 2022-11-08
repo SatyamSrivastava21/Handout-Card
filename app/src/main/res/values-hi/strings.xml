@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text1">1.) नीचे क्लिक करें और दान करें 2.) सफल भुगतान के बाद आपको कार्ड के साथ ईमेल प्राप्त होगा 3.) दान के लिए फिर से धन्यवाद 4.) कृपया हमसे 24*7 हेल्प डेस्क से संपर्क करें</string>
+    <string name="donate_for_the_mankind">मानव जाति के लिए दान करें</string>
+    <string name="help_each_other">हमसे संपर्क करें</string>
+    <string name="contact_us">हमसे संपर्क करें</string>
+    <string name="here_is_the_first_step_with_us">यहाँ हमारे साथ पहला कदम है</string>
+    <string name="shopkeeper">दुकानदार</string>
+    <string name="at_least_8_characters">कम से कम 8 अक्षर</string>
+    <string name="password_should_be">पासवर्ड होना चाहिए</string>
+    <string name="upload_a_pdf">पीडीएफ अपलोड करें</string>
+    <string name="enter_account_number">खाता संख्या दर्ज करें</string>
+    <string name="enter_benificary_name">लाभार्थी का नाम दर्ज करें</string>
+    <string name="enter_serial_no">क्रमांक दर्ज करें।</string>
+    <string name="please_enter_password">कृप्या पास्वर्ड भरो</string>
+    <string name="enter_password">पास्वर्ड भरो</string>
+    <string name="please_enter_email" translatable="false">कृपया ईमेल दर्ज करें</string>
+    <string name="minimum_one_uppercase">न्यूनतम एक अपरकेस</string>
+    <string name="minimum_one_number">न्यूनतम एक संख्या</string>
+    <string name="chat_with_us">हम से बात करे</string>
+    <string name="get_in_touch">संपर्क में रहो</string>
+    <string name="sign_up">साइन अप करें</string>
+    <string name="part_of">का हिस्सा</string>
+    <string name="we_can_be_the_genration_that_n_ends_hunger">हम भूख मिटाने वाली पीढ़ी बन सकते हैं</string>
+    <string name="we_re_in_it_together">हम इसमें एक साथ हैं</string>
+
+</resources>
