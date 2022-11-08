@@ -1,5 +1,6 @@
 package com.satyam.handout_cards;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
@@ -23,6 +24,7 @@ public class shopkeeper extends AppCompatActivity {
 
     ProgressDialog dialog;
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
