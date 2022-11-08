@@ -98,7 +98,7 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Enter Email Address"
+                    android:hint="@string/enter_email_address"
                     android:autofillHints="abc@gmail.com"
                     android:inputType="text" />
 
@@ -106,7 +106,7 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Enter amount to Split"
+                    android:hint="@string/enter_amount_to_split"
                     android:autofillHints="50"
                     android:inputType="number" />
 
@@ -115,7 +115,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:autofillHints="10"
-                    android:hint="Enter amount of card to donate"
+                    android:hint="@string/enter_amount_of_card_to_donate"
                     android:inputType="number" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -131,17 +131,18 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
 
         android:layout_marginTop="615dp"
-        android:layout_marginRight="160dp">
+        android:layout_marginEnd="160dp">
 
         <EditText
             android:id="@+id/idEdtAmount"
             android:layout_width="match_parent"
 
             android:layout_height="wrap_content"
-            android:hint="Enter amount to be payed"
+            android:autofillHints="number"
+            android:hint="@string/enter_amount_to_be_payed"
             android:inputType="number" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -149,7 +150,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="290dp"
+        android:layout_marginStart="290dp"
         android:layout_marginTop="595dp">
 
         <Button
@@ -157,10 +158,9 @@
             android:layout_width="wrap_content"
             android:padding="15dp"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:backgroundTint="#0A930F"
-            android:text="Donate"
+            android:text="@string/donate"
             android:textAllCaps="false" />
     </LinearLayout>
 

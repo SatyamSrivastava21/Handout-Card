@@ -21,6 +21,8 @@ import com.google.firebase.storage.StorageReference;
 
 public class shopkeeper extends AppCompatActivity {
 
+    ProgressDialog dialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,8 +69,6 @@ public class shopkeeper extends AppCompatActivity {
             return false;
         });
     }
-
-    ProgressDialog dialog;
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

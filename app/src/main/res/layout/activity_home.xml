@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Donate Us"
+            android:text="@string/donate_us"
             android:textSize="20sp"
             android:textStyle="italic"/>
 
@@ -43,7 +43,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     android:gravity="center_vertical"
-                    android:text="Step 1"
+                    android:text="@string/step_1"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="@color/black" />
 
@@ -51,7 +51,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="Click on Donate Us and pay using your favorable payment method"
+                    android:text="@string/click_on_donate_us_and_pay_using_your_favorable_payment_method"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                     android:textColor="@color/blue2" />
 
@@ -84,7 +84,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     android:gravity="center_vertical"
-                    android:text="Step 2"
+                    android:text="@string/step_2"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="@color/black" />
 
@@ -92,7 +92,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="An PDF with unique QR will be send to your registered email adrress"
+                    android:text="@string/an_pdf_with_unique_qr_will_be_send_to_your_registered_email_adrress"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                     android:textColor="@color/blue2" />
 
@@ -125,7 +125,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     android:gravity="center_vertical"
-                    android:text="Step 3"
+                    android:text="@string/step_3"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="@color/black" />
 
@@ -133,7 +133,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="Distribute to the required ones"
+                    android:text="@string/distribute_to_the_required_ones"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                     android:textColor="@color/blue2" />
 

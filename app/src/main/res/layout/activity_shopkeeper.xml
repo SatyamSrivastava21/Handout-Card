@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/grad1"
     android:layout_height="match_parent"
-    tools:context=".profile">
+    tools:context=".shopkeeper">
 
 
     <TextView
@@ -15,7 +15,7 @@
         android:gravity="center"
         android:layout_marginTop="10dp"
         android:textSize="40sp"
-        android:text="Shopkeeper"
+        android:text="@string/shopkeeper"
         android:textColor="@color/blue1" />
 
     <LinearLayout
@@ -102,7 +102,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:autofillHints="500"
-                    android:hint="Enter Serial No."
+                    android:hint="@string/enter_serial_no"
                     android:inputType="number" />
 
                 <EditText
@@ -110,14 +110,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:autofillHints="10"
-                    android:hint="Enter Benificary name"
+                    android:hint="@string/enter_benificary_name"
                     android:inputType="text" />
                 <EditText
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:autofillHints="00000000000"
-                    android:hint="Enter ACCOUNT NUMBER"
+                    android:hint="@string/enter_account_number"
                     android:inputType="number" />
 
             </LinearLayout>
@@ -138,19 +138,21 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="620dp"
         android:orientation="horizontal"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:id="@+id/uploadpdf"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:contentDescription="@string/todo"
             android:src="@drawable/charity" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Upload A Pdf"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/upload_a_pdf"
             android:fontFamily="@font/allerta"
             android:textSize="22sp"
             android:textStyle="bold" />
