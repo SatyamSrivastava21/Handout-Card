@@ -2,7 +2,6 @@ package com.satyam.handout_cards;
 
 import android.os.Bundle;
 import android.util.Log;
-
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
