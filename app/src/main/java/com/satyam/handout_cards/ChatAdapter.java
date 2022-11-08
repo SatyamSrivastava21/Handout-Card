@@ -12,8 +12,8 @@ import java.util.List;
 
 public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder> {
 
-    private List<Message> messageList;
-    private Activity activity;
+    private final List<Message> messageList;
+    private final Activity activity;
 
     public ChatAdapter(List<Message> messageList, Activity activity) {
         this.messageList = messageList;

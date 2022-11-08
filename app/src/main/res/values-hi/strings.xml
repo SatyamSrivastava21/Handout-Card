@@ -23,4 +23,9 @@
     <string name="part_of">का हिस्सा</string>
     <string name="we_can_be_the_genration_that_n_ends_hunger">हम भूख मिटाने वाली पीढ़ी बन सकते हैं</string>
     <string name="we_re_in_it_together">हम इसमें एक साथ हैं</string>
+    <string name="just_one_tap">बस एक Tap</string>
+    <string name="line2">सिर्फ एक टैप से लोगों के जीवन में बदलाव लाएं</string>
+    <string name="start_donating_now">अभी दान करना शुरू करें</string>
+    <string name="enter_name">नाम दर्ज करें</string>
+    <string name="please_enter_name">कृपया नाम दर्ज करें</string>
 </resources>
