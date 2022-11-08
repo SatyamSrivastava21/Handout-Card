@@ -11,11 +11,10 @@ import com.google.cloud.dialogflow.v2.SessionsClient;
 public class SendMessageInBg extends AsyncTask<Void, Void, DetectIntentResponse> {
 
 
-    private SessionName session;
-    private SessionsClient sessionsClient;
-    private QueryInput queryInput;
-    private String TAG = "async";
-    private BotReply botReply;
+    private final SessionName session;
+    private final SessionsClient sessionsClient;
+    private final QueryInput queryInput;
+    private final BotReply botReply;
 
     public SendMessageInBg(BotReply botReply,SessionName session, SessionsClient sessionsClient,
                            QueryInput queryInput) {
@@ -35,6 +34,7 @@ public class SendMessageInBg extends AsyncTask<Void, Void, DetectIntentResponse>
                             .build();
             return sessionsClient.detectIntent(detectIntentRequest);
         } catch (Exception e) {
+            String TAG = "async";
             Log.d(TAG, "doInBackground: " + e.getMessage());
             e.printStackTrace();
         }

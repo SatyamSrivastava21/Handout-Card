@@ -84,14 +84,14 @@ public class shopkeeper extends AppCompatActivity {
             // this will show message uploading
             // while pdf is uploading
             dialog.show();
+            assert data != null;
             Uri imageuri = data.getData();
             final String timestamp = "" + System.currentTimeMillis();
             StorageReference storageReference = FirebaseStorage.getInstance().getReference();
-            final String messagePushID = timestamp;
             Toast.makeText(shopkeeper.this, imageuri.toString(), Toast.LENGTH_SHORT).show();
 
             // Here we are uploading the pdf in firebase storage with the name of current time
-            final StorageReference filepath = storageReference.child(messagePushID + "." + "pdf");
+            final StorageReference filepath = storageReference.child(timestamp + "." + "pdf");
             Toast.makeText(shopkeeper.this, filepath.getName(), Toast.LENGTH_SHORT).show();
             filepath.putFile(imageuri).continueWithTask(new Continuation() {
                 @Override

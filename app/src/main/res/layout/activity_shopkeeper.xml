@@ -4,11 +4,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:fontFamily="@font/allerta"
     android:background="@drawable/grad1"
     android:layout_height="match_parent"
     tools:context=".shopkeeper">
-
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,13 +16,11 @@
         android:textSize="40sp"
         android:text="@string/shopkeeper"
         android:textColor="@color/blue1" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:orientation="vertical">
-
         <View
             android:layout_width="match_parent"
             android:layout_height="30dp" />
@@ -147,20 +144,14 @@
             android:layout_height="50dp"
             android:contentDescription="todo"
             android:src="@drawable/charity" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="@string/upload_a_pdf"
-            android:fontFamily="@font/allerta"
             android:textSize="22sp"
             android:textStyle="bold" />
-
     </LinearLayout>
-
-
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
@@ -170,5 +161,4 @@
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:menu="@menu/menu" />
-
 </RelativeLayout>

@@ -1,5 +1,7 @@
 package com.satyam.handout_cards;
 
+import static android.content.ContentValues.TAG;
+
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -9,8 +11,6 @@ import com.google.cloud.dialogflow.v2.QueryInput;
 import com.google.cloud.dialogflow.v2.SessionName;
 import com.google.cloud.dialogflow.v2.SessionsClient;
 
-import static android.content.ContentValues.TAG;
-
 public class RequestJavaV2Task extends AsyncTask<Void, Void, DetectIntentResponse> {
 
     private BotReply mInterface;
@@ -18,8 +18,7 @@ public class RequestJavaV2Task extends AsyncTask<Void, Void, DetectIntentRespons
     private SessionsClient sessionsClient;
     private QueryInput queryInput;
 
-    public RequestJavaV2Task(BotReply mInterface, SessionName session, SessionsClient sessionsClient,
-                             QueryInput queryInput) {
+    public RequestJavaV2Task(BotReply mInterface, SessionName session, SessionsClient sessionsClient, QueryInput queryInput) {
         this.mInterface = mInterface;
         this.session = session;
         this.sessionsClient = sessionsClient;
@@ -29,11 +28,7 @@ public class RequestJavaV2Task extends AsyncTask<Void, Void, DetectIntentRespons
     @Override
     protected DetectIntentResponse doInBackground(Void... voids) {
         try {
-            DetectIntentRequest detectIntentRequest =
-                    DetectIntentRequest.newBuilder()
-                            .setSession(session.toString())
-                            .setQueryInput(queryInput)
-                            .build();
+            DetectIntentRequest detectIntentRequest = DetectIntentRequest.newBuilder().setSession(session.toString()).setQueryInput(queryInput).build();
             return sessionsClient.detectIntent(detectIntentRequest);
         } catch (Exception e) {
             Log.d(TAG, "doInBackground: " + e.getMessage());
